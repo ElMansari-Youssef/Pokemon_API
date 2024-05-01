@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://wallpapercrafter.com/th8002/790402-Pokmon-Chespin-Pokmon-Fennekin-Pokmon-Froakie.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.Parag {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: white;
+    font-family: fantasy
+}
+
+.inputStyle {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 20px;
+
+}
+
+.tbxStyle {
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 15px;
+    font-size: 13px;
+    color: rgb(247, 248, 248);
+    height: 46px;
+    appearance: none;
+    transition: border 0.15s ease 0s;
+
+    :focus {
+        outline: none;
+        box-shadow: none;
+        border-color: rgb(100, 153, 255);
+    }
+}
+
+.btnStyle {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    padding: 0 24px;
+    border-radius: 50px;
+    min-width: 100px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #fd0;
+    font-weight: 500;
+    color: #222;
+}
+
+
+.card-container {
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+
+.card {
+    background-color: white;
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 50px 40px rgb(0, 0, 0);
+}
+
+.card img {
+
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.card-content .pokemonSpan {
+
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+
+
+.card-content .idSpan {
+
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.card-content .btn {
+
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 20px;
+    background-color: gray;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+}

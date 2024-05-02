@@ -8,6 +8,11 @@ async function GetData() {
         let PokeName = document.querySelectorAll(".card-content span")[0];
         let idText = document.querySelectorAll(".card-content span")[1];
 
+        PokeType = document.getElementById("PokeType");
+        PokeWeight = document.getElementById("PokeWeight");
+        PokePower = document.getElementById("PokePower");
+
+
         let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${tbx.value}`)
         let data = await response.json();
 
@@ -15,11 +20,18 @@ async function GetData() {
         image.src = data.sprites.front_default;
         PokeName.innerHTML = data.name
         idText.textContent = "#" + data.id
+        PokeType.textContent = "Type: " +  data.types[0].type.name
+        PokeWeight.textContent = "Weight: " + data.weight + " Kg"
+        PokePower.textContent = "Power: " + data.moves[0].move.name + " / " + data.moves[2].move.name 
 
-        console.log(data.moves[0].move.name)
-        console.log(data.moves[2].move.name)
-        console.log(data.weight + " kg")
-        console.log(data.types[0].type.name)
+
+        // console.log(data.moves[0].move.name)
+        // console.log(data.moves[2].move.name)
+        // console.log(data.weight + " kg")
+        // console.log(PokeType = data.types[0].type.name)
+
+     
+
        
         AddCard();
 

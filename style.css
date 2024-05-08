@@ -70,7 +70,7 @@ body {
 
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     margin-top: 60px;
 
@@ -102,7 +102,7 @@ body {
 
     font-size: 40px;
     text-transform: capitalize;
-    
+
 }
 
 
@@ -121,15 +121,16 @@ body {
     font-family: sans-serif;
     /* background-color: #ffeded; */
     border: 2px solid rgb(91, 91, 91);
-    box-shadow: 5px 1px 8px 0px ;
+    box-shadow: 5px 1px 8px 0px;
     border-radius: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
     padding: 6px;
-    
+    text-transform: capitalize;
+
 }
 
-.card-content .btn {
+/* .card-content .btn {
 
     display: inline-block;
     padding: 8px 16px;
@@ -138,4 +139,19 @@ body {
     border-radius: 15px;
     text-decoration: none;
     color: #fff;
+} */
+
+.card-content .heart {
+
+    margin-top: 25px;
+    position: relative;
+    left: 90%;
+    
+
 }
+
+.card-content .heart:hover {
+    animation-play-state: paused;
+}
+
+/* .Heart  */

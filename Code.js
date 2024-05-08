@@ -7,6 +7,9 @@ async function GetData() {
         let image = document.getElementById("image1");
         let PokeName = document.querySelectorAll(".card-content span")[0];
         let idText = document.querySelectorAll(".card-content span")[1];
+        // let card = document.getElementsByClassName("card");
+
+
 
         PokeType = document.getElementById("PokeType");
         PokeWeight = document.getElementById("PokeWeight");
@@ -23,16 +26,7 @@ async function GetData() {
         PokeType.textContent = "Type: " +  data.types[0].type.name
         PokeWeight.textContent = "Weight: " + data.weight + " Kg"
         PokePower.textContent = "Power: " + data.moves[0].move.name + " / " + data.moves[2].move.name 
-
-
-        // console.log(data.moves[0].move.name)
-        // console.log(data.moves[2].move.name)
-        // console.log(data.weight + " kg")
-        // console.log(PokeType = data.types[0].type.name)
-
-     
-
-       
+   
         AddCard();
 
     } catch (error) {
@@ -59,6 +53,6 @@ async function GetData() {
 
     cardClone.style = "display:block;"
 
-    return cardClone
+     return cardClone ;
 
 }

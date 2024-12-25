@@ -69,7 +69,7 @@ body {
 .card-container {
 
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: center;
     margin-top: 60px;
@@ -82,9 +82,10 @@ body {
     height: 100%;
     overflow: hidden;
     margin: 20px;
-    border-radius: 15px;
-    box-shadow: 10px 50px 40px rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 10px 50px 40px rgb(109, 79, 79);
 }
+
 
 .card img {
 
@@ -119,7 +120,6 @@ body {
     font-weight: bold;
     line-height: 20px;
     font-family: sans-serif;
-    /* background-color: #ffeded; */
     border: 2px solid rgb(91, 91, 91);
     box-shadow: 5px 1px 8px 0px;
     border-radius: 5px;
@@ -130,28 +130,16 @@ body {
 
 }
 
-/* .card-content .btn {
-
-    display: inline-block;
-    padding: 8px 16px;
-    margin-top: 20px;
-    background-color: gray;
-    border-radius: 15px;
-    text-decoration: none;
-    color: #fff;
-} */
-
 .card-content .heart {
 
     margin-top: 25px;
     position: relative;
     left: 90%;
-    
+
 
 }
 
 .card-content .heart:hover {
     animation-play-state: paused;
+    cursor: pointer;
 }
-
-/* .Heart  */

@@ -7,7 +7,6 @@ async function GetData() {
         let image = document.getElementById("image1");
         let PokeName = document.querySelectorAll(".card-content span")[0];
         let idText = document.querySelectorAll(".card-content span")[1];
-        // let card = document.getElementsByClassName("card");
 
 
 
